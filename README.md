@@ -11,3 +11,4 @@ The approach we came up with in regards to solving this issue is to create a ded
 
 Benefits of this app are, users can use this application to track their fitness progress and do exercises from the comfort of their own homes during this corona time. Trainers and trainees may use this app to keep track of their weight, fat, muscles, water limit, size, BMI, and FFMI and maintain track of their weight, fat, muscles, and water limit. Furthermore, they may monitor the growth of their biceps, chest, waist, hips, and both thighs at any time. 
 
+ui/1.png
