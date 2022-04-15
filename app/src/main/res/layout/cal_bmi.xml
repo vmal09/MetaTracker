@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:background="@drawable/wp"
+    android:padding="30dp"
+    tools:context=".Cal_BMI">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerhorizontalline"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/centerverticalline">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/heightlayout"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="170dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/buttonbackground">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@id/textmale"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/trans"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/male">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textmale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:background="@color/trans"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="@string/male"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/female"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/heightlayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="170dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/buttonbackground">
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_above="@id/textfemale"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/trans"
+            android:contentDescription="@string/todo"
+            android:fontFamily="@font/origintech"
+            android:src="@drawable/female">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textfemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:background="@color/trans"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="@string/femaletext"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/heightlayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/centerhorizontalline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-200dp"
+        android:background="@drawable/buttonbackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/currentheight"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="height\n[cm]"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/currentheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:hint="cm"
+            android:text="@string/startingheight"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <SeekBar
+            android:id="@+id/seekbarforheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:progressTint="#FF4C4C"
+            android:thumbTint="@color/purple_700">
+
+        </SeekBar>
+
+    </RelativeLayout>
+
+
+
+
+<androidx.cardview.widget.CardView
+android:layout_width="150dp"
+    android:layout_marginLeft="180dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="555dp"
+app:cardBackgroundColor="#D4BBFF"
+app:cardCornerRadius="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <android.widget.Button
+        android:id="@+id/calculatebmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/origintech"
+        android:letterSpacing="0.1"
+        android:text="BMI"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="555dp"
+        app:cardBackgroundColor="#8C9EFF"
+        app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_button"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="Menu"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </android.widget.Button>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/heightlayout"
+        android:layout_marginTop="-110dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/buttonbackground">
+
+        <TextView
+            android:id="@+id/textweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="weight\n[kg]"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/currentweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:inputType="numberDecimal"
+            android:text="@string/startingweight"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
+
+            <ImageView
+                android:id="@+id/decrementweight"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonbackground"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/minus">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
+
+            <ImageView
+                android:id="@+id/incremetweight"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonbackground"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/add">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Age"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/heightlayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-110dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/buttonbackground">
+
+        <TextView
+
+            android:id="@+id/textage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="Age\n[years]"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/currentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/origintech"
+            android:text="@string/startingage"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
+
+            <ImageView
+                android:id="@+id/decrementage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonbackground"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/minus">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus">
+
+            <ImageView
+                android:id="@+id/incrementage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/buttonbackground"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/add">
+
+            </ImageView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

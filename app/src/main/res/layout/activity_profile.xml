@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/wp"
+    tools:context=".ProfileActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/trans"
+        android:orientation="vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/trans"
+                    app:cardCornerRadius="100dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#597E57C2"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="@color/trans"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/add_dp"
+                            app:civ_border_color="@color/black"
+                            app:civ_border_width="5dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#597E57C2"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#F1EDED"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/trans"
+                            android:padding="5dp">
+
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="84dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/origintech"
+                                    android:letterSpacing="0.1"
+                                    android:padding="10dp"
+                                    android:text="name:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textViewUsername"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/trans"
+                                    android:fontFamily="@font/origintech"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="13sp" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="93dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/origintech"
+                                    android:letterSpacing="0.1"
+                                    android:padding="10dp"
+                                    android:text="Email:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textViewEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/trans"
+                                    android:fontFamily="@font/origintech"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="13sp" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/origintech"
+                                    android:letterSpacing="0.1"
+                                    android:padding="10dp"
+                                    android:text="Gender:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textViewGender"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/trans"
+                                    android:fontFamily="@font/origintech"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="13sp" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/origintech"
+                                    android:letterSpacing="0.1"
+                                    android:padding="10dp"
+                                    android:text="Reg ID:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textViewId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/trans"
+                                    android:fontFamily="@font/origintech"
+                                    android:padding="10dp"
+                                    android:text=""
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="13sp" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/origintech"
+                                    android:letterSpacing="0.1"
+                                    android:padding="10dp"
+                                    android:text="Company:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/trans"
+                                    android:fontFamily="@font/origintech"
+                                    android:padding="10dp"
+                                    android:text="NIKE, JPO"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#FF8A80"
+        app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/trans"
+        android:padding="5dp">
+
+
+        <android.widget.Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stop_watch"
+            android:fontFamily="@font/origintech"
+            android:letterSpacing="0.1"
+            android:text="Logout"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-59dp"
+            android:layout_marginLeft="180dp"
+            app:cardBackgroundColor="#8C9EFF"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/trans"
+                android:padding="5dp">
+
+                <android.widget.Button
+                    android:id="@+id/buttonMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_button"
+                    android:fontFamily="@font/origintech"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="Menu"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
+

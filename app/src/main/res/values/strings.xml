@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">MetaTr@cker</string>
+
+    <string-array name="names" fontFamily="@font/origintech">
+
+        <item>Strength </item>
+        <item>Cardio</item>
+        <item>Isometric</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="namess">
+        <item>Push Up</item>
+        <item>Pull Up</item>
+        <item>Sit Up</item>
+        <item>Squat</item>
+        <item>Lunges</item>
+        <item>Burpees</item>
+        <item>Planks</item>
+        <item>Deadlifts</item>
+
+    </string-array>
+
+    <string-array name="namesss">
+        <item>Leisure</item>
+        <item>Buisness</item>
+        <item>Ceremony</item>
+
+
+    </string-array>
+
+
+    <string name="p">Program</string>
+    <string name="exercise_type">exercise_value</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="workout">Workout</string>
+    <string name="button">Button</string>
+    <string name="manage_workout_session">Manage Workout Session</string>
+    <string name="Cardio">cardio</string>
+    <string name="Isometric">isometric</string>
+    <string name="choose_excersicee_type">Choose Excersicee Type:</string>
+    <string name="choose_excersice_type_type">excersicetype</string>
+    <string name="choose_exercise_type">Choose Exercise Type</string>
+    <string name="cardio">Cardio</string>
+    <string name="isometric">Isometric</string>
+    <string name="strength">Strength</string>
+    <string name="session_name">Session Name</string>
+    <string name="workout_type">Workout Type</string>
+    <string name="Calories_intake">Calories Intake</string>
+
+    <string name="workout_time">Workout Time</string>
+    <string name="number_of_sets">Number of sets</string>
+    <string name="add_session">Add Session</string>
+
+    <string name="unit">Cm</string>
+    <string name="femaletext">Female</string>
+    <string name="age">Age</string>
+    <string name="startingheight">170</string>
+    <string name="startingweight">55</string>
+    <string name="startingage">22</string>
+    <string name="todo">TODO</string>
+    <string name="height">Height</string>
+    <string name="calculate_your_bmi">Calculate Your BMI</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

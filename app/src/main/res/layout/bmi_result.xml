@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:background="@drawable/wp"
+    android:padding="30dp"
+    tools:context=".BMIRresult"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:src="@drawable/ok">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#597E57C2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <RelativeLayout
+                android:id="@+id/contentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F1EDED"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/bmidisplay"
+                    android:layout_width="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/trans"
+                    android:fontFamily="@font/origintech"
+                    android:gravity="center"
+                    android:text="22"
+                    android:textAlignment="center"
+                    android:textSize="50sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/genderdisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bmidisplay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/origintech"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="Gender"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bmicategorydispaly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genderdisplay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/origintech"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:text="Your BMI Category Is"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#D4BBFF"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+
+            <android.widget.Button
+                android:id="@+id/buttonCalBMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contentlayout"
+                android:background="@drawable/buttonbackground"
+                android:fontFamily="@font/origintech"
+                android:letterSpacing="0.1"
+                android:text="RECALCULATE YOUR BMI"
+                android:textStyle="bold">
+
+            </android.widget.Button>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

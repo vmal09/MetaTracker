@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896743386177",
+    "project_id": "metatracker-3367e",
+    "storage_bucket": "metatracker-3367e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896743386177:android:95891337f3e025f9c86ac0",
+        "android_client_info": {
+          "package_name": "com.example.meta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896743386177-i3fip912osk83qo5c7p1tvqrsnuvq188.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ7ykaukVn7HTl9tkUaGYRMrq_vEwDXzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896743386177-i3fip912osk83qo5c7p1tvqrsnuvq188.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

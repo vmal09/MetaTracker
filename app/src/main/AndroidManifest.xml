@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fontFamily="@font/origintech"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Meta"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".DarkMode"
+            android:exported="false" />
+        <activity
+            android:name=".IndexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewStats"
+            android:exported="false" />
+        <activity
+            android:name=".Cal_FFMI"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".Developers"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".AppServices"
+            android:exported="false" />
+        <activity
+            android:name=".AboutMenu"
+            android:exported="false" />
+
+        <activity
+            android:name=".StepsCounter"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewRemarks"
+            android:exported="false" />
+        <activity
+            android:name=".Remarks"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhysicalStats"
+            android:exported="false" />
+        <activity
+            android:name=".BMIRresult"
+            android:exported="false" />
+        <activity
+            android:name=".Cal_BMI"
+            android:exported="false" />
+        <activity
+            android:name=".ViewWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".StopWatch"
+            android:exported="false" />
+        <activity
+            android:name=".CreateWorkout"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
